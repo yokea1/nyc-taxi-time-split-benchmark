@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: If you use this repo, please cite it as below.
+title: Mega Tabular Time Drift Project (NYC Taxi)
+authors:
+  - family-names: YourSurname
+    given-names: YourGivenName
+version: "1.0.0"
+date-released: "2025-10-30"
+repository-code: https://github.com/yourhandle/mega_tabular_time_drift_project

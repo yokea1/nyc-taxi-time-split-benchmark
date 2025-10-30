@@ -1,0 +1,41 @@
+data:
+  processed_dir: data/processed_ieee
+  time_col: time
+  label_col: label_fraud
+  id_col: ""
+  train_months: ["2018-01","2018-02","2018-03"]
+  valid_months: ["2018-04"]
+  test_months:  ["2018-05"]
+
+features:
+  numeric: []
+  categorical: []
+
+training:
+  seeds: [42,43,44]
+  n_jobs: -1
+
+models:
+  logistic_regression:
+    C: 1.0
+    max_iter: 2000
+  xgboost:
+    n_estimators: 800
+    max_depth: 6
+    learning_rate: 0.08
+    subsample: 0.9
+    colsample_bytree: 0.9
+    tree_method: "hist"
+  catboost:
+    iterations: 1200
+    depth: 6
+    learning_rate: 0.06
+    verbose: 200
+    loss_function: "Logloss"
+
+costs:
+  c_tp: 0.0
+  c_fp: 2.0
+  c_fn: 10.0
+  c_tn: 0.0
+  thresholds: [0.02,0.03,0.05,0.07,0.1,0.12,0.15,0.2,0.25,0.3]

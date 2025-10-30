@@ -1,0 +1,72 @@
+data:
+  processed_dir: data/processed_sample
+  time_col: tpep_pickup_datetime
+  label_col: label_tip20
+  id_col: ride_id
+  train_months:
+  - 2023-01
+  valid_months:
+  - 2023-02
+  test_months:
+  - 2023-03
+features:
+  numeric: []
+  categorical: []
+training:
+  test_size: 0.0
+  valid_size: 0.0
+  seeds:
+  - 42
+  - 43
+  - 44
+  n_jobs: -1
+models:
+  logistic_regression:
+    C: 1.0
+    penalty: l2
+    max_iter: 2000
+  xgboost:
+    n_estimators: 150
+    max_depth: 5
+    learning_rate: 0.05
+    subsample: 0.8
+    colsample_bytree: 0.8
+    tree_method: hist
+    verbosity: 1
+  catboost:
+    iterations: 800
+    depth: 6
+    learning_rate: 0.05
+    verbose: 200
+    loss_function: Logloss
+  tabnet:
+    n_d: 32
+    n_a: 32
+    n_steps: 5
+    gamma: 1.5
+    lambda_sparse: 1e-4
+    max_epochs: 40
+    patience: 5
+costs:
+  c_tp: 0.0
+  c_fp: 1.0
+  c_fn: 5.0
+  c_tn: 0.0
+  thresholds:
+  - 0.1
+  - 0.15
+  - 0.2
+  - 0.25
+  - 0.3
+  - 0.35
+  - 0.4
+  - 0.45
+  - 0.5
+  - 0.55
+  - 0.6
+  - 0.65
+  - 0.7
+  - 0.75
+  - 0.8
+  - 0.85
+  - 0.9

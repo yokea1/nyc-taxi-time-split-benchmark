@@ -1,0 +1,29 @@
+# Define feature groups by column name patterns (substring match)
+feature_groups:
+  time_features:
+    - "hour"
+    - "dow"
+    - "month"
+    - "year"
+  location_features:
+    - "PULocationID"
+    - "DOLocationID"
+  passenger_trip:
+    - "trip_distance"
+    - "passenger_count"
+  payment_vendor:
+    - "payment_type"
+    - "VendorID"
+    - "RatecodeID"
+
+experiments:
+  - name: "drop_time_features"
+    drop_groups: ["time_features"]
+  - name: "drop_location_features"
+    drop_groups: ["location_features"]
+  - name: "drop_passenger_trip"
+    drop_groups: ["passenger_trip"]
+  - name: "drop_payment_vendor"
+    drop_groups: ["payment_vendor"]
+  - name: "only_time_location"
+    keep_groups: ["time_features","location_features"]

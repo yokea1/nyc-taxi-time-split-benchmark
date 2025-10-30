@@ -1,0 +1,24 @@
+stages:
+  data:
+    cmd: python scripts/download_data.py --year 2023 --months 1 2 3 4 5 6 7 8
+    outs:
+      - data/raw
+  preprocess:
+    cmd: python -m src.preprocess --raw_dir data/raw --out_dir data/processed --time_col tpep_pickup_datetime --min_rows 1000000
+    deps:
+      - data/raw
+    outs:
+      - data/processed
+  train:
+    cmd: python -m src.train --cfg configs/config.yaml --seeds 42 43 44
+    deps:
+      - data/processed
+    outs:
+      - models
+      - reports/metrics
+  evaluate:
+    cmd: python -m src.evaluate --cfg configs/config.yaml --seeds 42 43 44
+    deps:
+      - models
+    outs:
+      - reports/summary

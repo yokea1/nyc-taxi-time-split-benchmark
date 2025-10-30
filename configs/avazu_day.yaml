@@ -1,0 +1,42 @@
+data:
+  processed_dir: data/processed_avazu_day
+  time_col: time
+  label_col: label_click
+  id_col: ""
+  # Adjust these to match the actual days you have; common Avazu days include 2014-10-21..2014-10-30
+  train_months: ["2014-10-21","2014-10-22","2014-10-23","2014-10-24","2014-10-25","2014-10-26","2014-10-27"]
+  valid_months: ["2014-10-28"]
+  test_months:  ["2014-10-29"]
+
+features:
+  numeric: []
+  categorical: []
+
+training:
+  seeds: [42,43,44]
+  n_jobs: -1
+
+models:
+  logistic_regression:
+    C: 1.0
+    max_iter: 2000
+  xgboost:
+    n_estimators: 600
+    max_depth: 6
+    learning_rate: 0.1
+    subsample: 0.9
+    colsample_bytree: 0.9
+    tree_method: "hist"
+  catboost:
+    iterations: 800
+    depth: 6
+    learning_rate: 0.08
+    verbose: 200
+    loss_function: "Logloss"
+
+costs:
+  c_tp: 0.0
+  c_fp: 1.0
+  c_fn: 5.0
+  c_tn: 0.0
+  thresholds: [0.1,0.15,0.2,0.25,0.3,0.35,0.4,0.45,0.5]
