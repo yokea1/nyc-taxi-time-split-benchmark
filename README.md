@@ -151,3 +151,16 @@ python -m src.plot_ablation --csv reports/ablation/ablation_summary.csv
 - Calibration: `reports/calibration/calibration_seed42_xgb.png`
 - Rolling (xgb): `reports/rolling/rolling_metrics.png`
 - Ablation: `reports/ablation/ablation_summary.png`
+
+### Results (XGBoost, 3-seed mean±std)
+
+- ROC-AUC **0.7729 ± 0.0001** · PR-AUC **0.7623 ± 0.0001** · Brier **0.1624 ± 0.0000** · Min Expected Cost **47240.67 ± 11.47**
+
+**Calibration (ECE + 95% CI)**  
+![Calibration](reports/calibration/calibration_seed42_xgb.png)
+
+**Rolling Backtest**  
+![Rolling](reports/rolling/rolling_metrics.png)
+
+**Ablation Summary**  
+![Ablation](reports/ablation/ablation_summary.png)
