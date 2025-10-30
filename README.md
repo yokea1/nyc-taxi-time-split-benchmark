@@ -170,3 +170,5 @@ python -m src.plot_ablation --csv reports/ablation/ablation_summary.csv
 
 **Latest release:** [v1.0.0](https://github.com/yokea1/nyc-taxi-time-split-benchmark/releases/tag/v1.0.0)
 
+**Findings:** see [`FINDINGS.md`](FINDINGS.md).
+**CV snippets:** see [`CV_SNIPPETS.md`](CV_SNIPPETS.md).
