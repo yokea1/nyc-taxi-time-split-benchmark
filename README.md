@@ -164,3 +164,6 @@ python -m src.plot_ablation --csv reports/ablation/ablation_summary.csv
 
 **Ablation Summary**  
 ![Ablation](reports/ablation/ablation_summary.png)
+
+
+**Operations guide:** see [`OPERATIONS_GUIDE.md`](OPERATIONS_GUIDE.md).
