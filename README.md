@@ -167,3 +167,6 @@ python -m src.plot_ablation --csv reports/ablation/ablation_summary.csv
 
 
 **Operations guide:** see [`OPERATIONS_GUIDE.md`](OPERATIONS_GUIDE.md).
+
+**Latest release:** [v1.0.0](https://github.com/yokea1/nyc-taxi-time-split-benchmark/releases/tag/v1.0.0)
+
