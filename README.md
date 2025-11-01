@@ -183,3 +183,7 @@ python -m src.plot_ablation --csv reports/ablation/ablation_summary.csv
   <img src="reports/strategy/ECE_vs_Month_fixed_vs_refresh.png" width="48%"/>
 </p>
 
+
+
+### Rolling Backtest (Feb–Aug 2023)
+![](reports/rolling/rolling_metrics_dual_axis.png)

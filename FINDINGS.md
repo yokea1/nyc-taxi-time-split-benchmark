@@ -32,3 +32,7 @@
 - **Methodized strategy:** Monthly recalibration + threshold refresh reduces expected cost by **27.00** on average across months (95% CI **[27.00, 27.00]**).
 
 ![](reports/strategy/ExpectedCost_vs_Month_fixed_vs_refresh.png)
+
+
+### Rolling Backtest (Feb–Aug 2023)
+![](reports/rolling/rolling_metrics_dual_axis.png)
