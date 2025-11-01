@@ -187,3 +187,12 @@ python -m src.plot_ablation --csv reports/ablation/ablation_summary.csv
 
 ### Rolling Backtest (Feb–Aug 2023)
 ![](reports/rolling/rolling_metrics_dual_axis.png)
+
+## Monthly Threshold Refresh vs Fixed
+- **Methodized strategy (Fixed vs Monthly Refresh):** Average expected cost ↓ **231.71** across Feb–Aug 2023 (95% CI **[19.14, 483.57]**).
+
+![](reports/strategy/ExpectedCost_vs_Month_fixed_vs_refresh.png)
+
+_Optional_: ECE by month
+
+![](reports/strategy/ECE_vs_Month_fixed_vs_refresh.png)
