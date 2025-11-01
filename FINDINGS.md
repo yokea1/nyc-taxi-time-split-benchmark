@@ -27,3 +27,8 @@
 - Three seeds (42/43/44) → mean±std summary in `reports/summary/metrics_mean_std.json`.
 - Artifacts: calibration / rolling / ablation figures are versioned in repo for quick review.
 
+
+## Methodized Strategy (Fixed vs Monthly Refresh)
+- **Methodized strategy:** Monthly recalibration + threshold refresh reduces expected cost by **27.00** on average across months (95% CI **[27.00, 27.00]**).
+
+![](reports/strategy/ExpectedCost_vs_Month_fixed_vs_refresh.png)

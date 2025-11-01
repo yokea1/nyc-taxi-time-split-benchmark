@@ -172,3 +172,9 @@ python -m src.plot_ablation --csv reports/ablation/ablation_summary.csv
 
 **Findings:** see [`FINDINGS.md`](FINDINGS.md).
 **CV snippets:** see [`CV_SNIPPETS.md`](CV_SNIPPETS.md).
+
+
+### Findings (New)
+- **Methodized strategy:** Monthly recalibration + threshold refresh reduces expected cost by **27.00** on average across months (95% CI **[27.00, 27.00]**).
+
+![](reports/strategy/ExpectedCost_vs_Month_fixed_vs_refresh.png)
