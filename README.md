@@ -166,14 +166,6 @@ python -m src.plot_ablation --csv reports/ablation/ablation_summary.csv
 ![Ablation](reports/ablation/ablation_summary.png)
 
 
-**Operations guide:** see [`OPERATIONS_GUIDE.md`](OPERATIONS_GUIDE.md).
-
-**Latest release:** [v1.0.0](https://github.com/yokea1/nyc-taxi-time-split-benchmark/releases/tag/v1.0.0)
-
-**Findings:** see [`FINDINGS.md`](FINDINGS.md).
-**CV snippets:** see [`CV_SNIPPETS.md`](CV_SNIPPETS.md).
-
-
 ### Findings (New)
 - **Methodized strategy:** Monthly recalibration + threshold refresh reduces expected cost by **27.00** on average across months (95% CI **[27.00, 27.00]**).
 
@@ -188,4 +180,9 @@ python -m src.plot_ablation --csv reports/ablation/ablation_summary.csv
 ### Rolling Backtest (Feb–Aug 2023)
 ![](reports/rolling/rolling_metrics_dual_axis.png)
 
+**Operations guide:** see [`OPERATIONS_GUIDE.md`](OPERATIONS_GUIDE.md).
 
+**Latest release:** [v1.0.0](https://github.com/yokea1/nyc-taxi-time-split-benchmark/releases/tag/v1.0.0)
+
+**Findings:** see [`FINDINGS.md`](FINDINGS.md).
+**CV snippets:** see [`CV_SNIPPETS.md`](CV_SNIPPETS.md).
